@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SiSaham - Pencarian Data Emiten",
+  "version": "1.0.0",
+  "description": "Ekstensi pencarian data emiten IHSG dan laporan keuangan",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png",
+    "default_title": "SiSaham"
+  },
+  "permissions": ["alarms", "storage"],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "https://sisaham-search.search.windows.net/*",
+    "https://www.cnbcindonesia.com/*"
+  ]
+}

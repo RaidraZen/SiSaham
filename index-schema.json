@@ -1,0 +1,45 @@
+{
+  "name": "laporan-keuangan",
+  "fields": [
+    {
+      "name": "content",
+      "type": "Edm.String",
+      "searchable": true,
+      "retrievable": true
+    },
+    {
+      "name": "source_file",
+      "type": "Edm.String",
+      "key": true,
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true
+    },
+    {
+      "name": "page_number",
+      "type": "Edm.Int32",
+      "filterable": true,
+      "retrievable": true
+    },
+    {
+      "name": "title",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true
+    },
+    {
+      "name": "emiten",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true
+    },
+    {
+      "name": "tahun",
+      "type": "Edm.Int32",
+      "filterable": true,
+      "retrievable": true
+    }
+  ]
+}
